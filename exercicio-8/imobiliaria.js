@@ -5,7 +5,7 @@ do {
     opcao = prompt(
         "Bem-Vindo(a) ao Cadastro de Imóveis!\n" +
         "Total de Imóveis: " + imoveis.length +
-        "\nEscolha uma opção:\n1. Novo imóvel.\n2. Lista imóveis.\n3. Sair.3"
+        "\nEscolha uma opção:\n1. Novo imóvel.\n2. Lista imóveis.\n3. Sair."
     )
 
     switch (opcao) {
@@ -27,6 +27,9 @@ do {
 
             if (confirmacao) {
                 imoveis.push(imovel)
+                alert("Imovel salvo com sucesso!")
+            } else {
+                alert("Voltando ao menu.")
             }
 
             break
